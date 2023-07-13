@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red type</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;"><span style ="color:red">r</span>ed type</h1>
+<hr>
+    <div id = "controls"> 
+        <div id = "time-controls">time 
+            <a>5</a>
+            <a>15</a>
+            <a class ="default">30</a>
+            <a>45</a>
+            <a>60</a>
+        </div> &nbsp; &nbsp;
+        <div id = "word-controls">words
+            <a>5</a>
+            <a>10</a>
+            <a class = "default">15</a>
+            <a >20</a>
+        </div>
+        <div style="right:20px; position:absolute ;">ctrl + enter</div>
+    </div>
+    <hr>
+    <div id = "timer" >0s</div>
+    <div id="textbox-base"> 
+        <div id="textbox-ghosttext">select time</div>
+        <div id="textbox-input"  autofocus></div>
+       <div id="textbox-cursor"  contenteditable="true"  autofocus></div>
+    </div>
+<hr>
+<section id = "tail">
+    <div id = "scorecard"></div>
+    <a id = "checkans" onclick="checkans()">checkanswer &nbsp;</a>
+    <a id = "restart" onclick ="restart()">restart (ctrl + enter)</a>
+    <hr>
+</section>
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

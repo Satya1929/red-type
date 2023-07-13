@@ -1,0 +1,75 @@
+:root {
+    --textboxHeight: 20px;
+    --textboxWidth:1000px;
+    --colornone:rgba(255, 255, 255, 0);
+}
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: monospace;
+    color-scheme: dark;
+    font-size: 20px;
+    background-color: rgb(49, 49, 49);
+    color: rgb(227, 227, 227);
+}
+#word-controls a{
+    cursor: pointer;
+}
+#controls{
+    padding-left:10px;
+}
+#time-controls a{
+    cursor: pointer;
+}
+#textbox-base{
+    font-size: 16px;
+    padding: 2px 2px 2px 2px;
+    margin: 20px 20px 20px 20px; 
+    height: var(--textboxHeight); 
+    width: var(--textboxWidth);
+}
+
+#textbox-input{
+    z-index: 1;
+    outline:none;
+    height: var(--textboxHeight); 
+    width: var(--textboxWidth);
+    margin-top: calc(var(--textboxHeight) * -1);
+
+}
+#textbox-ghosttext{
+    z-index: -1;
+    color:rgba(255, 255, 255, 0.723);
+    overflow: hidden;
+    word-wrap:normal ;
+    height: var(--textboxHeight); 
+    width: var(--textboxWidth);
+    /*user-select: none;*/
+}
+#textbox-cursor{
+    color: var(--colornone);
+    overflow: hidden;
+    word-wrap:normal ;
+    height: var(--textboxHeight); 
+    width: var(--textboxWidth);
+    outline: none;
+    user-select: none;
+    margin-top: calc(var(--textboxHeight) * -1);
+}
+.correct-letter{
+    color:white;
+}
+.wrong-letter{
+    color: red;
+}
+[contentEditable=true]{ 
+    caret-color:orange;
+}
+#scorecard{
+    top:20vh;
+    width: var(--textboxWidth);
+    height: var(--textboxHeight);
+}
+#controls {
+    display: flex;
+}
