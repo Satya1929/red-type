@@ -142,4 +142,4 @@ document.onkeydown = function (e) {
 $("#tail").hide()
 $("#timer").hide()
 $(".default").trigger("click")
-$("#restart").trigger("click")
+$("#restart").trigger("click") 
